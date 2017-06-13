@@ -1,0 +1,98 @@
+# 基本は github.com のレポジトリーを指定するだけ
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+
+[[plugins]] 
+repo = 'Shougo/neosnippet.vim'
+
+[[plugins]] 
+repo = 'Shougo/neocomplete.vim'
+
+# http://qiita.com/hide/items/77b9c1b0f29577d603h
+[[plugins]] 
+repo = 'Shougo/unite.vim'
+
+# カラースキーまー
+[[plugins]] 
+repo = 'tomasr/molokai'
+
+# indent に色をつける　
+[[plugins]] 
+repo = 'nathanaelkane/vim-indent-guides'
+
+# vim から gitを呼び出す　
+[[plugins]] 
+repo = 'tpope/vim-fugitive'
+
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+# filer 超大事
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 't9md/vim-textmanip'
+
+# ファイルタイプに応じてコメントアウトしたり、コメントアウトの解除をしたりしてくれるプラグインです。
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+# vimmer 養成ギブス
+
+#[[plugins]]
+repo = 'modsound/gips-vim.git'
+
+# Unite
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+
+# ステータスバー
+[[plugins]]
+repo = 'Lokaltog/vim-powerline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+
+# python 補完
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+
+# vim shell   pythonとか使う　
+# [[plugins]]
+#repo = 'Shougo/vimshell.vim'
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+depends = 'context_filetype.vim'
+if = "has('nvim')"
+on_i = 1
+hook_source = '''
+source ~/.config/nvim/plugins/deoplete.rc.vim
+'''
+
+[[plugins]]
+repo = 'kassio/neoterm'
+if = "has('nvim')"
+hook_add = '''
+source ~/.config/nvim/plugins/neoterm.rc.vim
+'''
+
+[[plugins]]
+repo = 'Shougo/vimshell.vim'
+# if = "!has('nvim')"
+hook_add = '''
+source ~/.config/nvim/plugins/vimshell.rc.vim
+'''
+
+#
+#[[plugins]]
+#repo = ''
