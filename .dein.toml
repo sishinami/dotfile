@@ -67,8 +67,8 @@ repo = 'vim-airline/vim-airline-themes'
 repo = 'davidhalter/jedi-vim'
 
 # vim shell   pythonとか使う　
-# [[plugins]]
-#repo = 'Shougo/vimshell.vim'
+[[plugins]]
+repo = 'Shougo/vimshell.vim'
 
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
@@ -86,12 +86,12 @@ hook_add = '''
 source ~/.config/nvim/plugins/neoterm.rc.vim
 '''
 
-[[plugins]]
-repo = 'Shougo/vimshell.vim'
+# [[plugins]]
+#repo = 'Shougo/vimshell.vim'
 # if = "!has('nvim')"
-hook_add = '''
-source ~/.config/nvim/plugins/vimshell.rc.vim
-'''
+# hook_add = '''
+# source ~/.config/nvim/plugins/vimshell.rc.vim
+# '''
 
 #
 #[[plugins]]
